@@ -1,0 +1,54 @@
+body {
+    background: rgb(59, 111, 120);
+}
+
+.App-container {
+    margin-bottom: 8em;
+    margin-top: 8em;
+}
+
+.Tech-top-icons:hover {
+    transform: scale(1.3);
+    transition: 0.2s ease-in 0.5s;
+}
+
+.Tech-bottom-icons:hover {
+    transform: rotate(360deg) scale(1.5);
+    transition: 1s ease-in-out 0.5s;
+    color: rgb(136, 43, 38);
+}
+
+.Project-image {
+    height: 400px;
+}
+
+.Project-image:hover {
+    transition: all 0.85s ease-in-out 0.75s;
+    transform: scale(1.25);
+    z-index: 1000;
+}
+
+.Contact-icons:hover, .Home-icons:hover {
+    animation: bounce 1s ease-in-out 0s infinite alternate;
+}
+
+@media only screen and (max-width: 968px) {
+    .container .segment {
+        max-width: 100% !important;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-40px);
+        transform: translateY(-40px);
+    }
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
